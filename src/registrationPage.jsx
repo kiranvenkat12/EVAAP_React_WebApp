@@ -487,7 +487,7 @@ function SignupForm() {
          
           
           <div className="instagram-circle">
-            <a href="">
+            <a href="https://www.instagram.com/evaap_2024">
             <img
               className="instagram-circle2"
               src={Instagram_logo}
@@ -495,7 +495,7 @@ function SignupForm() {
             </a>
           </div>
           <div className="linked-in-circled">
-            <a href="">
+            <a href="https://www.linkedin.com/in/evaap-3a2965340/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
             <img
               className="linked-in-circled2"
               src={LinkedIn_logo}
@@ -503,7 +503,7 @@ function SignupForm() {
             </a>
           </div>
           <div className="twitter">
-            <a href="">
+            <a href="https://x.com/evvap415664?t=L4ihkZ-4E8FNY8k8RkY9Bg">
           <img className="twitter2" src= {Twitter_logo} />
           </a>
         </div>
