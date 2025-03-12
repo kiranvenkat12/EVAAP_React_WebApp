@@ -1,4 +1,4 @@
-/* Resetting default styles for better consistency */
+
 * {
   margin: 0;
   padding: 0;
@@ -151,7 +151,7 @@ width: 50%;
   display: inline-block;
   background-color: #007bff;
   color: #fff;
-  padding: 0.43rem 1rem;
+  padding: 0.4rem 1rem;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s;
@@ -455,8 +455,8 @@ label {
 
 
 
-Media Queries for Responsiveness
-@media (max-width: 991px) {
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
   
   .header-section {
     padding: 0.5rem;
