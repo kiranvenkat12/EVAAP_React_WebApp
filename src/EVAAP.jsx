@@ -151,7 +151,7 @@ function SignupForm() {
           </nav>
         </div>
       </header>
-      <h2 className="signup-title">Sign up</h2>
+      <h2 className="signup-title">REGISTRATION FORM</h2>
       <main className="main-content">
         <div className="flex-container">
           <div className="profile-image">
