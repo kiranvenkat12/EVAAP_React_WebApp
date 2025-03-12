@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import './EVAAP.css';
+import './registrationPage.css';
 
 import EVEAP_logo from '../public/images/logo/EVAAP_LOGO.png';
-
+import Twitter_logo from '../public/images/logo/twitter.png';
+import Instagram_logo from '../public/images/logo/instagram-circle.png';
+import LinkedIn_logo from '../public/images/logo/linkedin-circled.png';
 function SignupForm() {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -395,7 +397,13 @@ function SignupForm() {
             />
             <p id="tooltip">Go To Top</p>
           </a>
+          
           <a href="https://maps.app.goo.gl/AZg1Rxsktv8cs1Nq5">
+          <div className="contact-us4">
+            <div className="contact-us5">
+              Contact Us:
+            </div>
+          </div>
             <div className="no-179-down-street-new-york-xxxxxxxxxxx-usa-600096">
               prashanthi hills
               <br />
@@ -406,6 +414,12 @@ function SignupForm() {
               Telangana,India
             </div>
           </a>
+          <ul>
+          <div className="quick-links">
+            <div className="quick-links2">
+              Quick Links:
+            </div>
+          </div>
           <div className="home3">
             <a href="./index.html">
               <div className="home2" id="alertParagraph">
@@ -434,6 +448,13 @@ function SignupForm() {
               </div>
             </a>
           </div>
+          </ul>
+          <ul>
+          <div className="tools">
+            <div className="tools2">
+              Tools:
+            </div>
+          </div>
           <div className="fa-qs">
             <a href="https://www.example.com">
               <div className="fa-qs2">
@@ -441,6 +462,7 @@ function SignupForm() {
               </div>
             </a>
           </div>
+          
           <div className="carrer">
             <a href="https://www.example.com">
               <div className="carrer2">
@@ -455,43 +477,42 @@ function SignupForm() {
               </div>
             </a>
           </div>
-          <div className="instagram-circle">
-            <img
-              className="instagram-circle2"
-              src="./Home page/images/instagram-circle.png"
-            />
-          </div>
-          <div className="linked-in-circled">
-            <img
-              className="linked-in-circled2"
-              src="./Home page/images/linkedin-circled.png"
-            />
-          </div>
-          <div className="quick-links">
-            <div className="quick-links2">
-              Quick Links:
-            </div>
-          </div>
-          <div className="tools">
-            <div className="tools2">
-              Tools:
-            </div>
-          </div>
-          <div className="contact-us4">
-            <div className="contact-us5">
-              Contact Us:
-            </div>
-          </div>
+          </ul>
           <div className="follow-us">
             <div className="follow-us2">
               Follow Us:
             </div>
+            </div>
+          <ul className='follow-us-ul'>
+         
+          
+          <div className="instagram-circle">
+            <a href="">
+            <img
+              className="instagram-circle2"
+              src={Instagram_logo}
+            />
+            </a>
           </div>
+          <div className="linked-in-circled">
+            <a href="">
+            <img
+              className="linked-in-circled2"
+              src={LinkedIn_logo}
+            />
+            </a>
+          </div>
+          <div className="twitter">
+            <a href="">
+          <img className="twitter2" src= {Twitter_logo} />
+          </a>
         </div>
-        <div className="twitter">
-          <img className="twitter2" src="./Home page/images/twitter.png" />
+        </ul>
+           
         </div>
+        
       </div>
+     
     </form>
   );
 }
