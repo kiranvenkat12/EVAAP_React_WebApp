@@ -436,6 +436,7 @@ label {
 
 Media Queries for Responsiveness
 @media (max-width: 991px) {
+  
   .header-section {
     padding: 0.5rem;
   }
@@ -521,5 +522,7 @@ Media Queries for Responsiveness
   .linked-in-circled,
   .twitter {
     position: relative;
+ 
   }
+
 }
