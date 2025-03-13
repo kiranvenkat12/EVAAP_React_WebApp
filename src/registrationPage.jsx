@@ -5,6 +5,8 @@ import EVEAP_logo from '../public/images/logo/EVAAP_LOGO.png';
 import Twitter_logo from '../public/images/logo/twitter.png';
 import Instagram_logo from '../public/images/logo/instagram-circle.png';
 import LinkedIn_logo from '../public/images/logo/linkedin-circled.png';
+import PDF_IMAGE from '../public/images/logo/PDF_IMAGE.png';
+
 function SignupForm() {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -17,12 +19,23 @@ function SignupForm() {
     employment: [{ company: '', jobTitle: '' }],
   });
 
+  const [fileURL, setFileURL] = useState(null);
+
   const handleChange = (e) => {
     const { id, value, type, files } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [id]: type === 'file' ? files[0] : value,
-    }));
+    if (type === 'file') {
+      const file = files[0];
+      setFormData((prevData) => ({
+        ...prevData,
+        [id]: file,
+      }));
+      setFileURL(URL.createObjectURL(file));
+    } else {
+      setFormData((prevData) => ({
+        ...prevData,
+        [id]: value,
+      }));
+    }
   };
 
   const handleEducationChange = (index, e) => {
@@ -59,7 +72,6 @@ function SignupForm() {
   const handleDeleteEducation = (index) => {
     setFormData((prevData) => {
       if (prevData.education.length > 1) {
-        
         const updatedEducation = [...prevData.education];
         updatedEducation.splice(index, 1);
         return { ...prevData, education: updatedEducation };
@@ -69,7 +81,6 @@ function SignupForm() {
       }
     });
   };
-  
 
   const handleAddEmployment = () => {
     setFormData((prevData) => ({
@@ -77,7 +88,8 @@ function SignupForm() {
       employment: [...prevData.employment, { company: '', jobTitle: '' }],
     }));
   };
-  const handleRemoveEmployment = (index) => {  
+
+  const handleRemoveEmployment = (index) => {
     setFormData((prevData) => {
       if (prevData.employment.length > 1) {
         const updatedEmployment = [...prevData.employment];
@@ -88,7 +100,7 @@ function SignupForm() {
         return prevData;
       }
     });
-  } 
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -96,25 +108,18 @@ function SignupForm() {
     alert('Form submitted successfully');
   };
 
-
   return (
     <form className="signup-page" onSubmit={handleSubmit}>
       <header className="header-section">
         <div className="flex-container">
           <div className="logo-wrapper">
-            <img
-              src= {EVEAP_logo}
-              alt="Company Logo"
-              className="logo"
-            />
+            <img src={EVEAP_logo} alt="Company Logo" className="logo" />
           </div>
           <nav className="nav-content">
             <div className="nav-wrapper">
               <div className="nav-header">
-                <h1 className="main-title">
-                  EMPLOYMENT VERIFICATION AND ACADEMIC PROOFING
-                </h1>
-                <select id="lang" name="languages" >
+                <h1 className="main-title">EMPLOYMENT VERIFICATION AND ACADEMIC PROOFING</h1>
+                <select id="lang" name="languages">
                   <option value="apple">Languages</option>
                   <option value="apple">English</option>
                   <option value="apple">Spanish</option>
@@ -124,8 +129,7 @@ function SignupForm() {
                   <option value="mango">Telugu</option>
                 </select>
               </div>
-             
-              <div className="nav-links" >
+              <div className="nav-links">
                 <a href="./index.html" className="nav-link">
                   Home
                 </a>
@@ -372,11 +376,18 @@ function SignupForm() {
                   required
                   onChange={handleChange}
                 />
-                <img
-                  src="./candidate singup page/upload.jpg"
+                {fileURL && (
+                  <a href={fileURL} target="_blank" rel="noopener noreferrer" className="upload-preview">
+                   <img
+                  src={PDF_IMAGE}
                   alt="Upload icon"
                   className="upload-icon"
                 />
+                <br />
+                click to view file here
+                  </a>
+                )}
+                
               </div>
             </div>
           </div>
@@ -393,17 +404,14 @@ function SignupForm() {
             <img
               className="evaap-logo-2-1-ai-brush-removebg-8-nqsg-4-zr-222"
               src={EVEAP_logo}
-              alt='EVEAP Logo'
+              alt="EVEAP Logo"
             />
             <p id="tooltip">Go To Top</p>
           </a>
-          
           <a href="https://maps.app.goo.gl/AZg1Rxsktv8cs1Nq5">
-          <div className="contact-us4">
-            <div className="contact-us5">
-              Contact Us:
+            <div className="contact-us4">
+              <div className="contact-us5">Contact Us:</div>
             </div>
-          </div>
             <div className="no-179-down-street-new-york-xxxxxxxxxxx-usa-600096">
               prashanthi hills
               <br />
@@ -415,104 +423,77 @@ function SignupForm() {
             </div>
           </a>
           <ul>
-          <div className="quick-links">
-            <div className="quick-links2">
-              Quick Links:
+            <div className="quick-links">
+              <div className="quick-links2">Quick Links:</div>
             </div>
-          </div>
-          <div className="home3">
-            <a href="./index.html">
-              <div className="home2" id="alertParagraph">
-                Home
-              </div>
-            </a>
-          </div>
-          <div className="contact-us3">
-            <a href="./contact us.html">
-              <div className="contact-us2">
-                Contact Us
-              </div>
-            </a>
-          </div>
-          <div className="about-us3">
-            <a href="./about us page.html">
-              <div className="about-us2">
-                About Us
-              </div>
-            </a>
-          </div>
-          <div className="our-services3">
-            <a href="./service page.html">
-              <div className="our-services2">
-                Our Services
-              </div>
-            </a>
-          </div>
+            <div className="home3">
+              <a href="./index.html">
+                <div className="home2" id="alertParagraph">
+                  Home
+                </div>
+              </a>
+            </div>
+            <div className="contact-us3">
+              <a href="./contact us.html">
+                <div className="contact-us2">Contact Us</div>
+              </a>
+            </div>
+            <div className="about-us3">
+              <a href="./about us page.html">
+                <div className="about-us2">About Us</div>
+              </a>
+            </div>
+            <div className="our-services3">
+              <a href="./service page.html">
+                <div className="our-services2">Our Services</div>
+              </a>
+            </div>
           </ul>
           <ul>
-          <div className="tools">
-            <div className="tools2">
-              Tools:
+            <div className="tools">
+              <div className="tools2">Tools:</div>
             </div>
-          </div>
-          <div className="fa-qs">
-            <a href="https://www.example.com">
-              <div className="fa-qs2">
-                FAQs
-              </div>
-            </a>
-          </div>
-          
-          <div className="carrer">
-            <a href="https://www.example.com">
-              <div className="carrer2">
-                Carrer
-              </div>
-            </a>
-          </div>
-          <div className="announces">
-            <a href="https://www.example.com">
-              <div className="announces2">
-                Announces
-              </div>
-            </a>
-          </div>
+            <div className="fa-qs">
+              <a href="https://www.example.com">
+                <div className="fa-qs2">FAQs</div>
+              </a>
+            </div>
+            <div className="carrer">
+              <a href="https://www.example.com">
+                <div className="carrer2">Carrer</div>
+              </a>
+            </div>
+            <div className="announces">
+              <a href="https://www.example.com">
+                <div className="announces2">Announces</div>
+              </a>
+            </div>
           </ul>
           <div className="follow-us">
-            <div className="follow-us2">
-              Follow Us:
-            </div>
-            </div>
-          <ul className='follow-us-ul'>
-         
-          
-          <div className="instagram-circle">
-            <a href="https://www.instagram.com/evaap_2024" target='_blank'>
-            <img
-              className="instagram-circle2"
-              src={Instagram_logo}
-            />
-            </a>
+            <div className="follow-us2">Follow Us:</div>
           </div>
-          <div className="linked-in-circled">
-            <a href="https://www.linkedin.com/in/evaap-3a2965340/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank'>
-            <img
-              className="linked-in-circled2"
-              src={LinkedIn_logo}
-            />
-            </a>
-          </div>
-          <div className="twitter">
-            <a href="https://x.com/evvap415664?t=L4ihkZ-4E8FNY8k8RkY9Bg" target='_blank'>
-          <img className="twitter2" src= {Twitter_logo} />
-          </a>
+          <ul className="follow-us-ul">
+            <div className="instagram-circle">
+              <a href="https://www.instagram.com/evaap_2024" target="_blank">
+                <img className="instagram-circle2" src={Instagram_logo} />
+              </a>
+            </div>
+            <div className="linked-in-circled">
+              <a
+                href="https://www.linkedin.com/in/evaap-3a2965340/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+              >
+                <img className="linked-in-circled2" src={LinkedIn_logo} />
+              </a>
+            </div>
+            <div className="twitter">
+              <a href="https://x.com/evvap415664?t=L4ihkZ-4E8FNY8k8RkY9Bg" target="_blank">
+                <img className="twitter2" src={Twitter_logo} />
+              </a>
+            </div>
+          </ul>
         </div>
-        </ul>
-           
-        </div>
-        
       </div>
-     
     </form>
   );
 }

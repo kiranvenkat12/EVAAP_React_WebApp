@@ -206,7 +206,7 @@ width: 50%;
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  color: #555;
+  /* color: #555; */
   font-size: 1rem;
 }
 
