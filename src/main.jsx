@@ -5,6 +5,6 @@ import SignupForm from './registrationPage'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <SignupForm />
+<SignupForm />
   </StrictMode>,
 )
