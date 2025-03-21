@@ -1,11 +1,200 @@
 .header-section {
-    background: #fff;
-    width: 100%;
     padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 600px;
+    max-width: 1440px;
+    max-height: 100%;
+    height: 25%;
+    position: absolute;
+    top: 0%;
+    background-image: url(./header_images/backgound_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    /* overflow: hidden; */
+  }
+
+  .flex-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo-wrapper{
+     width: 15%;
+    height: 95%; 
+    position: absolute;
+    left: 2%;
+    top: -15px;
+    overflow: hidden;
   }
   
-  .flex-container {
+
+  .header_h2{
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    left: 22%;
+    top: 12%;
+    font-size: 90%;
+    align-content: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: large;
+
+  }
+
+  .header_div_navlink,
+  .header_div_active_navlink{
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+
+  }
+
+  
+ .header_div_navlink_ul{
+    list-style: none;
+    width: auto;
+  }
+
+  .header_div_navlink_ul li{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .header_div_navlink_ul li a{
+   width: auto;
+   padding: 0.5rem;
+   color: white;
+  }
+
+  .header_div_navlink_ul li a:hover{
+    border-bottom: 1px solid  rgba(206, 204, 204, 0.952);
+    }
+
+    .header_menu_bar_btn{
+      width: auto;
+      position: absolute;
+      right: 8%;
+      color: blue;
+      border: 0.5px solid rgba(192, 192, 231, 0.473);
+      height: 35px;
+      font-size: large;
+      border-radius: 10px;
+      padding-top: 8px;
+      display: none;
+
+      
+    }
+
+    .header_div_login{
+      width: 10%;
+      position: absolute;
+      right: 5%;
+      top: 10%;
+      height: 120px;
+      border-radius: 10px;
+    }
+    .header_div_login_btn,
+    .header_div_help_btn{
+      color: blue;
+      border: 2px solid blue;
+    }
+    .header_div_help_btn{
+      margin-top: 26px;
+    }
+
+    .header_div_login_btn:hover,
+    .header_div_help_btn:hover{
+      background-color: blue;
+      color: white;
+    }
+
+    @media (max-width:900px) {
+      
+      .header_div_navlink{
+        left: 20%;
+      }
+    }
+
+  @media (max-width :700px) {
+
+    .header_h2{
+      display: none;
+    }
+
+    .logo-wrapper{
+      width: 20%;
+     height: 85%; 
+     position: absolute;
+     left: 40%;
+     overflow: hidden;
+   }
+   .header_div_navlink{
+    position: absolute;
+    left: 75%;
+    top: 68%;
+    border: 1px solid blue;
+    background-color: white;
+   }
+   .header_div_active_navlink{
+    position: absolute;
+    left: 75%;
+    top: -680%;
+    border: 1px solid blue;
+   }
+   .header_div_navlink_ul li{
+      width: auto;
+      padding: 1rem;
+      flex-direction: column;
+   }
+   .header_div_navlink_ul li a{
+    width: auto;
+    padding: 0.5rem;
+    color: blue;
+   }
+
+   .header_div_navlink_ul li a:hover{
+    border-bottom: 1px solid blue;
+    }
+    .header_menu_bar_btn{
+      display: block;
+      } 
+
+      .header_div_login{
+        width: 15%;
+        position: absolute;
+        right: 25%;
+        top: 10%;
+        height: 120px;
+        border-radius: 10px;
+      }
+  }
+
+  /* .header_div_navlink{
+    border: 1px solid black;
+    width: 100%;
+  
+
+  }
+
+
+  .header_div_navlink nav ul{
+    list-style: none;
+    border: 1px solid black;
+  }
+  .header_div_navlink nav ul li{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+  }
+   */
+  /* .flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,4 +329,4 @@
   .login2 a:hover {
     background-color: #0056b3;
   }
-  
+   */
