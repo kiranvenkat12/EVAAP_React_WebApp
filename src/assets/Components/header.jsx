@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 
 
+
 const Header = () => {
     const [isOpen,setIsOpen]=useState(false)
 
@@ -26,11 +27,12 @@ const Header = () => {
                      } >
                     <ul className='header_div_navlink_ul'>
                         <li>
-                            <a href="">Home</a>
-                            <a href="">Contact Us</a>
-                            <a href="">About US</a>
-                            <a href="">Our Services</a>
-                            <a href="">Our Founters</a>
+                            <NavLink to='/home' className={({isActive})=>isActive?"header_active_navlink":"header_navlink"}>Home</NavLink>
+                            <NavLink to='/registrationPage' className={({isActive})=>isActive?"header_active_navlink":"header_navlink"}>Conatact us</NavLink>
+                            <NavLink to='/' className={({isActive})=>isActive?"header_active_navlink":"header_navlink"}>About us</NavLink>
+                            <NavLink to='/' className={({isActive})=>isActive?"header_active_navlink":"header_navlink"}>Our Services</NavLink>
+                            <NavLink to='/' className={({isActive})=>isActive?"header_active_navlink":"header_navlink"}>Our Founders</NavLink>
+                        
                         </li>
                     </ul>
                     </nav>

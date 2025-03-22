@@ -109,7 +109,7 @@ function SignupForm() {
 
   return (
     <>
-    <Header />
+    {/* <Header /> */}
     <form className="signup-page" onSubmit={handleSubmit}>
       <h2 className="signup-title">REGISTRATION FORM</h2>
       <main className="main-content">
@@ -354,7 +354,7 @@ function SignupForm() {
       </div>
       
     </form>
-    <Fotter />
+    {/* <Fotter /> */}
     </>
   );
 }
