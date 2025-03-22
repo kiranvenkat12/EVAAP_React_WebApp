@@ -6,7 +6,6 @@ import img1 from "./assets/Components/header_images/verification_imges/Backgroun
 import img2 from "./assets/Components/header_images/verification_imges/verification_image1.png"
 import img3 from "./assets/Components/header_images/verification_imges/pre_verification_image.png"
 import img4 from "./assets/Components/header_images/haeder_backgound_image.jpg"
-import img5 from "./assets/Components/header_images/verification_imges/human-resource-management-hr.webp"
 
 import './home.css'
 
