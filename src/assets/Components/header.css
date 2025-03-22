@@ -18,7 +18,6 @@
     background-size: cover;
     background-position: 50%;
     width: 100%;
-    /* overflow: hidden; */
     z-index: 100;
   }
 
@@ -157,21 +156,21 @@
      top: 10%;
      overflow: hidden;
    }
-   .header_div_navlink{
-    position: absolute;
-    left: 75%;
-    top: 68%;
-    border: 1px solid blue;
-    background-color: white;
-   }
+   .header_div_navlink,
    .header_div_active_navlink{
     position: absolute;
-    left: 75%;
-    top: -680%;
+    left: 56%;
+    top: 90%;
     border: 1px solid blue;
+    background-color: white;
+    z-index: 100;
+   }
+   .header_div_active_navlink{
+    top: -680%;
+  
    }
    .header_div_navlink_ul li{
-      width: auto;
+      width: 180px;
       padding: 1rem;
       flex-direction: column;
    }
