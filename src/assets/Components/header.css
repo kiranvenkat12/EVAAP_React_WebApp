@@ -33,9 +33,12 @@
     height: 95%; 
     position: absolute;
     left: 2%;
-    top: -15px;
-    overflow: hidden;
+    top: 0px;
   }
+.logo{
+  position: absolute;
+  top: -13%;
+}
   
 
   .header_h2{
@@ -88,7 +91,7 @@
     .header_menu_bar_btn{
       width: auto;
       position: absolute;
-      right: 8%;
+      right: 18%;
       top: 60%;
       color: blue;
       border: 0.5px solid rgba(192, 192, 231, 0.473);
@@ -142,70 +145,71 @@
       }
     }
 
-  @media (max-width: 700px) {
+  @media (max-width: 760px) {
 
-    .header_h2{
-      display: none;
-    }
+          .header_h2{
+            display: none;
+          }
 
-    .logo-wrapper{
-      width: 20%;
-     height: 85%; 
-     position: absolute;
-     left: 40%;
-     top: 10%;
-     overflow: hidden;
-   }
-   .header_div_navlink,
-   .header_div_active_navlink{
-    position: absolute;
-    left: 56%;
-    top: 90%;
-    border: 1px solid blue;
-    background-color: white;
-    z-index: 100;
-   }
-   .header_div_active_navlink{
-    top: -680%;
-  
-   }
-   .header_div_navlink_ul li{
-      width: 180px;
-      padding: 1rem;
-      flex-direction: column;
-   }
-   .header_navlink{
-    width: auto;
-    padding: 0.5rem;
-    color: blue;
-   }
-
-   .header_navlink:hover{
-    border-bottom: 1px solid blue;
-    }
-    .header_menu_bar_btn{
-      display: block;
-      } 
-
-      .header_div_login{
-        width: 15%;
+      .logo{
+        width: 20%;
+        height: 99%; 
         position: absolute;
-        right: 25%;
-        top: 10%;
-        height: 120px;
-        border-radius: 10px;
+        top: 5%;
+        left: 35%;
       }
 
-      .header_div_help_btn{
-      display: none;
-      }
-      .header_div_login_btn{
-        position: absolute;
-        left: 145%;
-        top: 0%;
-        width: 70%;
-        font-size: small;
-      }
+
+        .header_div_navlink,
+        .header_div_active_navlink{
+          position: absolute;
+          left: 55%;
+          top: 90%;
+          border: 1px solid blue;
+          background-color: white;
+          z-index: 100;
+        }
+        .header_div_active_navlink{
+          top: -680%;
+        
+        }
+        .header_div_navlink_ul li{
+            width: 180px;
+            padding: 1rem;
+            flex-direction: column;
+        }
+        .header_navlink{
+          width: auto;
+          padding: 0.5rem;
+          color: blue;
+        }
+
+        .header_navlink:hover{
+          border-bottom: 1px solid blue;
+          }
+          .header_menu_bar_btn{
+            display: block;
+            } 
+
+            .header_div_login{
+              width: 15%;
+              position: absolute;
+              right: 35%;
+              top: 10%;
+              height: 120px;
+              border-radius: 10px;
+            }
+
+            .header_div_help_btn{
+            display: none;
+            }
+            .header_div_login_btn{
+              position: absolute;
+              left: 145%;
+              top: 0%;
+              width: 70%;
+              font-size: small;
+            }
   }
 
   
