@@ -1,3 +1,10 @@
+.header_active_navlink{
+  border-bottom: 1px solid  rgba(206, 204, 204, 0.952);
+  width: auto;
+   padding: 0.5rem;
+   text-decoration: none;
+   /* color: white; */
+}
 .header-section {
     padding: 1rem;
     min-width: 600px;
@@ -12,6 +19,7 @@
     background-position: 50%;
     width: 100%;
     /* overflow: hidden; */
+    z-index: 100;
   }
 
   .flex-container{
@@ -67,13 +75,14 @@
     
   }
 
-  .header_div_navlink_ul li a{
+  .header_navlink{
    width: auto;
    padding: 0.5rem;
    color: white;
+   text-decoration: none;
   }
 
-  .header_div_navlink_ul li a:hover{
+  .header_navlink:hover{
     border-bottom: 1px solid  rgba(206, 204, 204, 0.952);
     }
 
@@ -81,12 +90,13 @@
       width: auto;
       position: absolute;
       right: 8%;
+      top: 60%;
       color: blue;
       border: 0.5px solid rgba(192, 192, 231, 0.473);
       height: 35px;
       font-size: large;
       border-radius: 10px;
-      padding-top: 8px;
+      padding-top: 1px;
       display: none;
 
       
@@ -104,15 +114,18 @@
     .header_div_help_btn{
       color: blue;
       border: 2px solid blue;
+      border-radius: 10px;
     }
     .header_div_help_btn{
       margin-top: 26px;
+
     }
 
     .header_div_login_btn:hover,
     .header_div_help_btn:hover{
       background-color: blue;
       color: white;
+
     }
 
     @media (max-width:900px) {
@@ -120,9 +133,17 @@
       .header_div_navlink{
         left: 20%;
       }
+      .header_div_login{
+        width: 10%;
+        position: absolute;
+        right: 2%;
+        top: 3%;
+        height: 120px;
+        border-radius: 10px;
+      }
     }
 
-  @media (max-width :700px) {
+  @media (max-width: 700px) {
 
     .header_h2{
       display: none;
@@ -133,6 +154,7 @@
      height: 85%; 
      position: absolute;
      left: 40%;
+     top: 10%;
      overflow: hidden;
    }
    .header_div_navlink{
@@ -153,13 +175,13 @@
       padding: 1rem;
       flex-direction: column;
    }
-   .header_div_navlink_ul li a{
+   .header_navlink{
     width: auto;
     padding: 0.5rem;
     color: blue;
    }
 
-   .header_div_navlink_ul li a:hover{
+   .header_navlink:hover{
     border-bottom: 1px solid blue;
     }
     .header_menu_bar_btn{
@@ -173,6 +195,17 @@
         top: 10%;
         height: 120px;
         border-radius: 10px;
+      }
+
+      .header_div_help_btn{
+      display: none;
+      }
+      .header_div_login_btn{
+        position: absolute;
+        left: 145%;
+        top: 0%;
+        width: 70%;
+        font-size: small;
       }
   }
 
