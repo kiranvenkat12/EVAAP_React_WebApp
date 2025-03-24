@@ -3,8 +3,7 @@ import './registrationPage.css';
 
 
 import PDF_IMAGE from '../public/images/logo/PDF_IMAGE.png';
-import Header from './assets/Components/header';
-import Fotter from './assets/Components/fotter';
+
 
 function SignupForm() {
   const [formData, setFormData] = useState({
@@ -109,7 +108,6 @@ function SignupForm() {
 
   return (
     <>
-    {/* <Header /> */}
     <form className="signup-page" onSubmit={handleSubmit}>
       <h2 className="signup-title">REGISTRATION FORM</h2>
       <main className="main-content">
