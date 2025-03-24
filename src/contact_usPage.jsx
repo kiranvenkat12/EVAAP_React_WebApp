@@ -69,6 +69,7 @@ const ContactUs = ()=>{
                   <label htmlFor="" >Description</label>
                    <textarea name="description" id="" placeholder="enter your feedback..."></textarea>
                 </div>
+                <button className="contact_us_submit_btn">submit</button>
              </form>
              </div>
         </div>
