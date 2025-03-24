@@ -11,8 +11,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/home" Component={Home} />
-        <Route path="/registrationPage" Component={SignupForm} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/registrationPage" element={<SignupForm />} />
       </Routes>
       <Fotter />
     </Router>
