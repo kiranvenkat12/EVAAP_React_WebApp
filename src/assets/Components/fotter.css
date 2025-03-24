@@ -1,10 +1,16 @@
 .fotter {
-    width: 100%;
-    background-color: #fff;
+    width: 100vw;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     position: relative;
+    bottom: 0px;
+   
     margin-top: 2rem;
+    background-image: url(./header_images/backgound_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+   
     
   }
   
@@ -13,129 +19,78 @@
    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
   .evaap-logo-2-1-ai-brush-removebg-8-nqsg-4-zr-222 {
-    height: 150px;
-    width: 140px;
+    height: 180px;
+    width: 180px;
     object-fit: contain;
+
   }
-  
-  #tooltip {
-    background-color: #010101;
-      color: #e2e2e4;
-      position: absolute;
-      top: 10px;
-      width: 75px;
-      padding: 1px;
-      border-radius: 5px;
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 0.3s;
-  }
-  
-  .evaap-logo-2-1-ai-brush-removebg-8-nqsg-4-zr-222:hover #tooltip {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .no-179-down-street-new-york-xxxxxxxxxxx-usa-600096 {
-    font-size: 0.9rem;
-    color: #555;
-    width: 160px;
-  }
-  
-  .home3,
-  .contact-us3,
-  .about-us3,
-  .our-services3,
-  .fa-qs,
-  .carrer,
-  .announces {
-    /* */
-  }
-  
-  .home2,
-  .contact-us2,
-  .about-us2,
-  .our-services2,
-  .fa-qs2,
-  .carrer2,
-  .announces2 {
-    font-size: 0.9rem;
-    color: #555;
+  .contact-us4 a{
+    color: white;
     text-decoration: none;
-    transition: color 0.3s;
+  } 
+ 
+  
+ .fotter-quickLink-ul{
+  list-style: none;
+  margin-top: 10px;
+ }
+  
+ .fotter-quickLink-ul li{
+  margin-top: 2px;
+ }
+ .fotter-quickLink-ul li a{
+  text-decoration: none;
+  color: white;
+ }
+ .contact-us4 a:hover,
+ .fotter-quickLink-ul li a:hover,
+  .fotter-tools-ul li a:hover {
+   text-decoration: underline;
+  }
    
-    width: 100px;
+ .fotter-tools-ul{
+  list-style: none;
+  padding: 0%;
+  height: auto;
+  display: inline;
+  justify-content: space-between;
+  margin-top: 10px;
+}
   
+  .fotter-tools-ul li{
+  margin-top: 5px;
   }
-  
-  .home2:hover,
-  .contact-us2:hover,
-  .about-us2:hover,
-  .our-services2:hover,
-  .fa-qs2:hover,
-  .carrer2:hover,
-  .announces2:hover {
-    color: #007bff;
+  .fotter-tools-ul li a{
+    text-decoration: none;
+    color: white;
   }
-  
-  .instagram-circle,
-  .linked-in-circled,
-  .twitter {
-    width: 30px;
-    height: 30px;
-    
-  }
-  
-  .instagram-circle2,
-  .linked-in-circled2,
-  .twitter2 {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-   
-  }
-  
-  .quick-links,
-  .tools,
-  .contact-us4,
-  .follow-us {
-    /* */
-  }
-  
-  .quick-links2,
-  .tools2,
-  .contact-us5,
-  .follow-us2 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #333;
-  }
-  
-  /* Utility Classes */
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
-  
+
   .follow-us-ul{
-    display: flex;
-    gap: 2rem;
+    flex-direction: column;
     list-style: none;
     padding: 0;
+    justify-content: space-between;
+   
   }
   
   .follow-us{
     margin-bottom: 100px;
     position: absolute;
     width: 150px;  
-    left: 79%;
+    left: 80%;
+    top: 30px;
+
   }
+  .follow-us-ul-li{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+  }
+ 

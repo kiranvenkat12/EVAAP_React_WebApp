@@ -4,6 +4,7 @@ import Header from './assets/Components/header';
 import Fotter from './assets/Components/fotter';
 import Home from './home';
 import SignupForm from './registrationPage';
+import ContactUs from './contact_usPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/registrationPage" element={<SignupForm />} />
+        <Route path="/contact_usPage" element={<ContactUs/>}/>
       </Routes>
       <Fotter />
     </Router>
