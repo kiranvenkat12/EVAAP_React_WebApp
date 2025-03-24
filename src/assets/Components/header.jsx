@@ -16,8 +16,8 @@ const Header = () => {
     return (
         <header className="header-section">
             <div className="flex-container">
-                <div className="logo-wrapper">
-                    <img src={EVEAP_logo} alt="Company Logo" className="logo" />
+                <div className="header-logo-wrapper">
+                    <img src={EVEAP_logo} alt="Company Logo" className="header-logo" />
                 </div>
                 <h2 className="header_h2">
                     EMPLOYMENT VERIFICATION AND ACADEMIC PROOFING
