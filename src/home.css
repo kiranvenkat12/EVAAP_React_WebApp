@@ -1,47 +1,90 @@
-.Home_Carousal_div{
-    margin-top: 5.5%;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
+.home_container {
+  width: 100vw;
+  height: auto;
+  margin-top: auto;
+  padding-top: 5.4rem;
+}
+.Home_Carousal_div {
+  margin-top: 5.5%;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
 }
 
-.Home_Carousal_div_img{
-    height: 500px;
-    width: 100%;
-    
+.Home_Carousal_div_img {
+  height: 500px;
+  width: 100%;
 }
-.carousel-indicators [data-bs-target]{
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-
-.carousel-indicators{
-    margin-left: 0%;
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
 }
 
-.carousel-caption{
-    left: 0%;
+.carousel-indicators {
+  margin-left: 0%;
 }
 
-@media (max-width:900px) {
-    .Home_Carousal_div{
-        margin-top: 15%;
-        height: 400px;
-    }
-    .Home_Carousal_div_img{
-        height: 400px;
-    }
-
+.carousel-caption {
+  left: 0%;
 }
 
-@media (max-width:700px) {
-    .Home_Carousal_div{
-        margin-top: 20.7%;
-        height: 400px;
-    }
-    .Home_Carousal_div_img{
-        height: 400px;
-    }
+@media (max-width: 900px) {
+  .Home_Carousal_div {
+    margin-top: 15%;
+    height: 400px;
+  }
+  .Home_Carousal_div_img {
+    height: 400px;
+  }
+}
 
+@media (max-width: 700px) {
+  .Home_Carousal_div {
+    margin-top: 20.7%;
+    height: 400px;
+  }
+  .Home_Carousal_div_img {
+    height: 400px;
+  }
+}
+
+/* hero part */
+
+.home_hero_div {
+  height: 60vh;
+  background-image: url("./assets/Components/header_images/banner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  margin-top: 1px;
+  align-content: center;
+}
+
+.home_hero_div_p {
+  color: white;
+  width: 40em;
+  text-align: center;
+  margin-left: 25%;
+}
+
+.home_hero_div_div {
+  color: white;
+  width: 15em;
+  margin-left: 5%;
+}
+
+.home_hero_div_btn {
+  width: auto;
+  position: relative;
+  left: 80vw;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(27, 120, 226, 0.932);
+}
+
+.home_hero_div_btn:hover {
+  color: rgba(27, 120, 226, 0.932);
+  background-color: white;
+  border: 1px solid rgba(27, 120, 226, 0.932);
 }
