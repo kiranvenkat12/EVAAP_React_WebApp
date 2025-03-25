@@ -1,59 +1,54 @@
 .fotter {
-    width: 100vw;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    position: relative;
-    bottom: 0px;
-   
-    margin-top: 2rem;
-    background-image: url(./header_images/backgound_image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-   
-    
-  }
-  
-  .fotter2 {
-   
-   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .evaap-logo-2-1-ai-brush-removebg-8-nqsg-4-zr-222 {
-    height: 180px;
-    width: 180px;
-    object-fit: contain;
+  width: 100vw;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0%;
+  position: relative;
+  bottom: 0px;
 
-  }
-  .contact-us4 a{
-    color: white;
-    text-decoration: none;
-  } 
- 
-  
- .fotter-quickLink-ul{
+  margin-top: 2rem;
+  background-image: url(./header_images/backgound_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.fotter2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.evaap-logo-2-1-ai-brush-removebg-8-nqsg-4-zr-222 {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+}
+.contact-us4 a {
+  color: white;
+  text-decoration: none;
+}
+
+.fotter-quickLink-ul {
   list-style: none;
   margin-top: 10px;
- }
-  
- .fotter-quickLink-ul li{
+}
+
+.fotter-quickLink-ul li {
   margin-top: 2px;
- }
- .fotter-quickLink-ul li a{
+}
+.fotter-quickLink-ul li a {
   text-decoration: none;
   color: white;
- }
- .contact-us4 a:hover,
- .fotter-quickLink-ul li a:hover,
-  .fotter-tools-ul li a:hover {
-   text-decoration: underline;
-  }
-   
- .fotter-tools-ul{
+}
+.contact-us4 a:hover,
+.fotter-quickLink-ul li a:hover,
+.fotter-tools-ul li a:hover {
+  text-decoration: underline;
+}
+
+.fotter-tools-ul {
   list-style: none;
   padding: 0%;
   height: auto;
@@ -61,36 +56,45 @@
   justify-content: space-between;
   margin-top: 10px;
 }
-  
-  .fotter-tools-ul li{
+
+.fotter-tools-ul li {
   margin-top: 5px;
-  }
-  .fotter-tools-ul li a{
-    text-decoration: none;
-    color: white;
+}
+.fotter-tools-ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.follow-us-ul {
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+  display: block;
+}
+
+.follow-us {
+  position: absolute;
+  width: 150px;
+  left: 78%;
+  top: 25px;
+}
+.follow-us-ul-li {
+  position: relative;
+  top: 28px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 750px) {
+  .follow-us-ul,
+  .fotter-tools-ul,
+  .fotter-quickLink-ul {
+    display: none;
   }
 
-  .follow-us-ul{
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    justify-content: space-between;
-   
+  .evaap-logo-2-1-ai-brush-removebg-8-nqsg-4-zr-222 {
+    margin-left: 40%;
   }
-  
-  .follow-us{
-    margin-bottom: 100px;
-    position: absolute;
-    width: 150px;  
-    left: 80%;
-    top: 30px;
-
-  }
-  .follow-us-ul-li{
-    position: relative;
-    top: 20px;
-    left: 40px;
-    width: 40px;
-    height: 40px;
-  }
- 
+}
