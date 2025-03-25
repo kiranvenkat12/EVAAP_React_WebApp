@@ -10,7 +10,7 @@
   /* min-width: 600px; */
   /* max-width: 100vw; */
   max-height: 100%;
-  height: 25%;
+  height: 20%;
   position: fixed;
   top: 0%;
   background-image: url(./header_images/backgound_image.jpg);
@@ -30,14 +30,14 @@
 
 .header-logo-wrapper {
   width: 15%;
-  height: 95%;
+  height: 80%;
   position: absolute;
   left: 2%;
   top: 0px;
 }
 .header-logo {
   position: absolute;
-  top: -13%;
+  top: -30%;
 }
 
 .header_h2 {
