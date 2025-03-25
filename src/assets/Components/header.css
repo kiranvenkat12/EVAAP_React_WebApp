@@ -1,215 +1,200 @@
-.header_active_navlink{
-  border-bottom: 1px solid  rgba(206, 204, 204, 0.952);
+.header_active_navlink {
+  border-bottom: 1px solid rgba(206, 204, 204, 0.952);
   width: auto;
-   padding: 0.5rem;
-   text-decoration: none;
-   /* color: white; */
+  padding: 0.5rem;
+  text-decoration: none;
+  /* color: white; */
 }
 .header-section {
-    padding: 1rem;
-    /* min-width: 600px; */
-    /* max-width: 100vw; */
-    max-height: 100%;
-    height: 25%;
-    position: fixed;
-    top: 0%;
-    background-image: url(./header_images/backgound_image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    width: 100vw;
-    z-index: 100;
-  }
+  padding: 1rem;
+  /* min-width: 600px; */
+  /* max-width: 100vw; */
+  max-height: 100%;
+  height: 25%;
+  position: fixed;
+  top: 0%;
+  background-image: url(./header_images/backgound_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 100vw;
+  z-index: 100;
+}
 
-  .flex-container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
+.flex-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 
-  .header-logo-wrapper{
-     width: 15%;
-    height: 95%; 
-    position: absolute;
-    left: 2%;
-    top: 0px;
-  }
-.header-logo{
+.header-logo-wrapper {
+  width: 15%;
+  height: 95%;
+  position: absolute;
+  left: 2%;
+  top: 0px;
+}
+.header-logo {
   position: absolute;
   top: -13%;
 }
-  
 
-  .header_h2{
-    width: 50%;
-    height: 30%;
+.header_h2 {
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  left: 22%;
+  top: 12%;
+  font-size: 90%;
+  align-content: center;
+  text-align: center;
+  font-weight: 800;
+  font-size: large;
+}
+
+.header_div_navlink,
+.header_div_active_navlink {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.header_div_navlink_ul {
+  list-style: none;
+  width: auto;
+}
+
+.header_div_navlink_ul li {
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_navlink {
+  width: auto;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.header_navlink:hover {
+  border-bottom: 1px solid rgba(206, 204, 204, 0.952);
+}
+
+.header_menu_bar_btn {
+  width: auto;
+  position: absolute;
+  right: 18%;
+  top: 60%;
+  color: blue;
+  border: 0.5px solid rgba(192, 192, 231, 0.473);
+  height: 35px;
+  font-size: large;
+  border-radius: 10px;
+  padding-top: 1px;
+  display: none;
+}
+
+.header_div_login {
+  width: 10%;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  height: 120px;
+  border-radius: 10px;
+}
+.header_div_login_btn,
+.header_div_help_btn {
+  color: blue;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+.header_div_help_btn {
+  margin-top: 26px;
+}
+
+.header_div_login_btn:hover,
+.header_div_help_btn:hover {
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .header_div_navlink {
+    left: 20%;
+  }
+  .header_div_login {
+    width: 10%;
     position: absolute;
-    left: 22%;
-    top: 12%;
-    font-size: 90%;
-    align-content: center;
-    text-align: center;
-    font-weight: 800;
-    font-size: large;
+    right: 2%;
+    top: 3%;
+    height: 120px;
+    border-radius: 10px;
+  }
+}
 
+@media (max-width: 760px) {
+  .header_h2 {
+    display: none;
+  }
+  .header-logo-wrapper {
+    width: 20%;
+    height: 95%;
+    position: fixed;
+    left: 35%;
+    top: 10%;
   }
 
   .header_div_navlink,
-  .header_div_active_navlink{
-    width: auto;
+  .header_div_active_navlink {
     position: absolute;
-    top: 50%;
-    left: 30%;
-
+    left: 55%;
+    top: 90%;
+    border: 1px solid blue;
+    background-color: white;
+    z-index: 100;
   }
-
-  
- .header_div_navlink_ul{
-    list-style: none;
+  .header_div_active_navlink {
+    top: -680%;
+  }
+  .header_div_navlink_ul li {
+    width: 180px;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .header_navlink {
     width: auto;
+    padding: 0.5rem;
+    color: blue;
   }
 
-  .header_div_navlink_ul li{
-    padding: 0.7rem;
-    display: flex;
-    justify-content: space-between;
-    
+  .header_navlink:hover {
+    border-bottom: 1px solid blue;
+  }
+  .header_menu_bar_btn {
+    display: block;
+    right: 15%;
   }
 
-  .header_navlink{
-   width: auto;
-   padding: 0.5rem;
-   color: white;
-   text-decoration: none;
+  .header_div_login {
+    width: 15%;
+    position: absolute;
+    right: 35%;
+    top: 10%;
+    height: 120px;
+    border-radius: 10px;
   }
 
-  .header_navlink:hover{
-    border-bottom: 1px solid  rgba(206, 204, 204, 0.952);
-    }
-
-    .header_menu_bar_btn{
-      width: auto;
-      position: absolute;
-      right: 18%;
-      top: 60%;
-      color: blue;
-      border: 0.5px solid rgba(192, 192, 231, 0.473);
-      height: 35px;
-      font-size: large;
-      border-radius: 10px;
-      padding-top: 1px;
-      display: none;
-
-      
-    }
-
-    .header_div_login{
-      width: 10%;
-      position: absolute;
-      right: 5%;
-      top: 10%;
-      height: 120px;
-      border-radius: 10px;
-    }
-    .header_div_login_btn,
-    .header_div_help_btn{
-      color: blue;
-      border: 2px solid blue;
-      border-radius: 10px;
-    }
-    .header_div_help_btn{
-      margin-top: 26px;
-
-    }
-
-    .header_div_login_btn:hover,
-    .header_div_help_btn:hover{
-      background-color: blue;
-      color: white;
-
-    }
-
-    @media (max-width:900px) {
-      
-      .header_div_navlink{
-        left: 20%;
-      }
-      .header_div_login{
-        width: 10%;
-        position: absolute;
-        right: 2%;
-        top: 3%;
-        height: 120px;
-        border-radius: 10px;
-      }
-    }
-
-  @media (max-width: 760px) {
-
-          .header_h2{
-            display: none;
-          }
-          .header-logo-wrapper{
-            width: 20%;
-           height: 95%; 
-           position: fixed;
-           left: 35%;
-           top: 10%;
-         }
-
-
-
-        .header_div_navlink,
-        .header_div_active_navlink{
-          position: absolute;
-          left: 55%;
-          top: 90%;
-          border: 1px solid blue;
-          background-color: white;
-          z-index: 100;
-        }
-        .header_div_active_navlink{
-          top: -680%;
-        
-        }
-        .header_div_navlink_ul li{
-            width: 180px;
-            padding: 1rem;
-            flex-direction: column;
-        }
-        .header_navlink{
-          width: auto;
-          padding: 0.5rem;
-          color: blue;
-        }
-
-        .header_navlink:hover{
-          border-bottom: 1px solid blue;
-          }
-          .header_menu_bar_btn{
-            display: block;
-            } 
-
-            .header_div_login{
-              width: 15%;
-              position: absolute;
-              right: 35%;
-              top: 10%;
-              height: 120px;
-              border-radius: 10px;
-            }
-
-            .header_div_help_btn{
-            display: none;
-            }
-            .header_div_login_btn{
-              position: absolute;
-              left: 145%;
-              top: 0%;
-              width: 70%;
-              font-size: small;
-            }
+  .header_div_help_btn {
+    display: none;
   }
-
-  
+  .header_div_login_btn {
+    position: absolute;
+    left: 145%;
+    top: 0%;
+    width: auto;
+    font-size: small;
+  }
+}
