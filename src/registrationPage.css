@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,7 @@
 
 body {
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f8f8f8;
@@ -20,10 +19,9 @@ body {
   flex-direction: column;
   overflow: hidden;
   min-height: 100vh;
-  margin-top: 28vh;
+  margin-top: 22vh;
   padding: 5vh;
 }
-
 
 .signup-title {
   color: #222;
@@ -171,13 +169,8 @@ label {
   background-color: #0056b3;
 }
 
-
-
-
-
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
-  
   .header-section {
     padding: 0.5rem;
   }
@@ -263,7 +256,5 @@ label {
   .linked-in-circled,
   .twitter {
     position: relative;
- 
   }
-
 }
