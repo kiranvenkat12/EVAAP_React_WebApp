@@ -36,7 +36,7 @@ const Header = () => {
                 Home
               </NavLink>
               <NavLink
-                to="/"
+                to="/aboutUsPage"
                 className={({ isActive }) =>
                   isActive ? "header_active_navlink" : "header_navlink"
                 }
