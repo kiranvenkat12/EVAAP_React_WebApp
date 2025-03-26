@@ -1,6 +1,89 @@
 .founderPage-main {
-  border: 1px solid black;
-  margin-top: auto;
+  padding: 5%;
+  margin-top: 10%;
   width: 100vw;
   height: auto;
+}
+.founderpage-founder {
+  background-color: white;
+  width: 60%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 3%;
+  margin-top: 20px;
+  margin-left: 25%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgba(202, 201, 201, 0.507);
+  transition: transform 0.3s ease;
+  gap: 20px;
+}
+.founderpage-founder-img {
+  width: 240px;
+  height: 240px;
+  transition: transform 0.3s ease;
+}
+.founderpage-founder-h2 {
+  align-content: center;
+}
+
+.founderpage-founder-div-img {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.founderpage-founder-p {
+  font-weight: 200;
+  font-size: medium;
+}
+
+.founderpage-founder:hover,
+.founderpage-founder-img:hover {
+  transform: scale(1.02);
+}
+
+.founderpage-developer-h2 {
+  font-weight: 700;
+  color: rgb(109, 109, 153);
+  left: 170px;
+  text-decoration: underline;
+  margin-top: 50px;
+}
+
+.founderpage-developers {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.founderpage-developers-ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  list-style: none;
+}
+
+.founderpage-developers-ul-ul li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgb(187, 185, 185);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.founderpage-developers-ul-ul li img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.founderpage-developers-ul-ul li img:hover {
+  box-shadow: 0 10px 20px rgb(187, 185, 185);
+  border-radius: 10px;
+  cursor: pointer;
 }
