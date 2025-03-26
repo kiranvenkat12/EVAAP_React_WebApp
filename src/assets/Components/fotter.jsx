@@ -34,22 +34,22 @@ const Footer = () => {
          <ul className="fotter-quickLink-ul">
               <div className="quick-links2"><b>Quick Links:</b> </div>
               <li>
-              <a href="./index.html">
+              <a href="">
                   Home
               </a>
               </li>
               <li>
-              <a href="./index.html">
+              <a href="">
               Contact Us
               </a>
               </li>
               <li>
-              <a href="./index.html">
+              <a href="">
               About Us
               </a>
               </li>
               <li>
-              <a href="./index.html">
+              <a href="">
               Our Services
               </a>
               </li>
