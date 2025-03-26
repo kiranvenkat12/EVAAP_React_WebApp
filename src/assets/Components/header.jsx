@@ -60,7 +60,7 @@ const Header = () => {
                 Our Services
               </NavLink>
               <NavLink
-                to="/registrationPage"
+                to="/founderPage"
                 className={({ isActive }) =>
                   isActive ? "header_active_navlink" : "header_navlink"
                 }
