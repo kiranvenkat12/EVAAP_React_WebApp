@@ -50,16 +50,12 @@ const FounderPage = () => {
         <h2 className="founderpage-founder-h2">
           Sai Madiraju <br />
           Founder & CEO
-        </h2>
-        <ul className="founderpage-founder-ul">
-          <li>
-            Founder Of: Hiscope Cyberlinks
-            <br />
-            EVAAP (Employment Verification and Academic Proofing)
-            <br />
+          <p className="founderpage-founder-p">
+            Founder Of: Hiscope Cyberlinks <br />
+            EVAAP (Employment Verification and Academic Proofing) <br />
             VDr (Verified Doctor)
-          </li>
-        </ul>
+          </p>
+        </h2>
       </div>
       <h2 className="founderpage-developer-h2">DEVELOPERS</h2>
       <div className="founderpage-developers">
