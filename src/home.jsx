@@ -17,7 +17,7 @@ import serviceImg3 from "./assets/Components/header_images/verification_imges/fr
 
 import "./home.css";
 
-const home = () => {
+const Home = () => {
   return (
     <div className="home_container">
       {/* <Header/> */}
@@ -180,4 +180,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;
