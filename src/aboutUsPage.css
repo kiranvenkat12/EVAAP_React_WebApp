@@ -1,16 +1,12 @@
-.container {
-    font-family: Arial, sans-serif;
+.aboutus_container {
     color: #333;
     max-width: 100%;
     margin-top: 11%;
-    padding: 0px;
+    padding: 0.5%;
 
   }
   
-  .EVAAP {
-    background: #F8EBEB;
-
-  }
+ 
   .EVAAP{
     margin: 0;
     padding: 40px 20px;
@@ -25,8 +21,9 @@
   }
   
   .text-content {
-    max-width: 500px;
-    padding:0px
+    max-width: 600px;
+    padding:0px;
+   margin-left: 12%;
   }
   
   .text-content h1 {
@@ -42,41 +39,23 @@
   }
   
   .header-image {
-    width: 250px;
+    width: 350px;
     height: auto;
     border-radius: 8px;
+    margin-right: 5%;
   }
   
-  .vision-container {
-    background: #69ad82;
-    padding: 40px 20px;
-    text-align: center;
-    color: white;
-  }
   
-  .vision-container h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+
   
-  .vision-container p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .Our_Vision_Container {
+  .Our_Vision_Container{
     margin: 0;
-    padding: 40px 20px;
     text-align: center;
   }
   
   .vision {
     text-align: center;
     margin: 0;
-    font-style: italic;
-    background: #69ad82;
     padding: 40px;
     text-align: center;
     width:100%;
@@ -84,7 +63,7 @@
     
   }
   .Comprehensive-background-verification{
-    background: #E9DBDB;
+    background: #c9c5c50e;
     padding:10px;
     text-align: center;
     width:100%;
@@ -105,7 +84,7 @@
     border-radius:20px;
   }
   .About_US_Content{
-    background: #fcdcdc;
+    background: #e6e0e046;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
@@ -118,7 +97,7 @@
   }
   
   .highlight {
-    background: #fcdcdc;
+    background: #fcdcdc3d;
     color: #d80000;
     padding: 10px;
     border-radius: 5px;
@@ -148,7 +127,6 @@
   .contact {
     margin-top: 40px;
     text-align: left;
-    font-style: italic;
   }
   .p{
     width:80px;
