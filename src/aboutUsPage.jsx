@@ -6,7 +6,7 @@ import Aboutus_img from "./assets/Components/header_images/about_us_Images/about
 const AboutusPage = () => {
   return (
 
-    <div className="container">
+    <div className="aboutus_container">
       {/* Main Content */}
       <div className = "EVAAP">
       <div className="header">
@@ -25,7 +25,7 @@ const AboutusPage = () => {
         </div>
       
       {/* Vision Statement */}
-      <div className="Our Vision Container">
+      <div className="Our_Vision_Container">
         <section className="vision">
         <h2>Our Vision Statement</h2>
         <p>
