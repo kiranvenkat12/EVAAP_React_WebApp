@@ -11,6 +11,7 @@ import Home from "./home";
 import SignupForm from "./registrationPage";
 import ContactUs from "./contact_usPage";
 import FounderPage from "./founderPage";
+import AboutUs from "./aboutUsPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/registrationPage" element={<SignupForm />} />
         <Route path="/contact_usPage" element={<ContactUs />} />
         <Route path="/founderPage" element={<FounderPage />} />
+        <Route path="/aboutUsPage" element={<AboutUs />} />
       </Routes>
       <Fotter />
     </Router>
