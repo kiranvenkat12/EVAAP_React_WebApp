@@ -1,8 +1,9 @@
 import React from "react";
 import "./aboutUsPage.css";
-import AboutusImg from "../src/assets/Components/header_images/about_us_Images/about_us_bg_img.jpg";
 
-const HomePage = () => {
+import Aboutus_img from "./assets/Components/header_images/about_us_Images/aboutus_img.jpg";
+
+const AboutusPage = () => {
   return (
 
     <div className="container">
@@ -18,7 +19,7 @@ const HomePage = () => {
               employment and educational background screening from worldwide.
             </p>
           </div>
-          <img src={AboutusImg} alt="Laptop" className="header-image" />
+          <img src={Aboutus_img} alt="Laptop" className="header-image" />
         </div>
         </div>
         </div>
@@ -126,4 +127,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default AboutusPage;
