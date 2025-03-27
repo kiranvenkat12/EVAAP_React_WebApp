@@ -63,9 +63,11 @@
 
 .home_hero_div_p {
   color: white;
-  width: 40em;
-  text-align: center;
-  margin-left: 25%;
+  width: 28em;
+  text-align: justify;
+  font-size: clamp(1rem, calc(4vw+0.8rem), 2rem);
+  margin-left: 20%;
+  text-wrap: balance;
 }
 
 .home_hero_div_div {
