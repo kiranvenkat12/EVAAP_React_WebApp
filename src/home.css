@@ -3,6 +3,7 @@
   height: auto;
   margin-top: auto;
   padding-top: 3.3rem;
+  font-size: small;
 }
 .Home_Carousal_div {
   margin-top: 5.5%;
@@ -94,13 +95,12 @@
 .home_banner_div,
 .home_banner_div2 {
   width: 100vw;
-  height: auto;
+  height: 60vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
   list-style: none;
-  padding: 1rem;
-  align-content: center;
   gap: 10px;
+  padding-top: 2px;
 }
 .home_banner_div2 {
   grid-template-columns: 2fr 1fr;
@@ -109,7 +109,7 @@
 .home_banner_div li img,
 .home_banner_div2 li img {
   width: 100%;
-  height: 60%;
+  height: 45%;
   border-radius: 10px;
   aspect-ratio: 1/1;
 }
@@ -131,6 +131,7 @@
   color: white;
   font-weight: 600;
   animation: colorChange 2s infinite;
+  font-size: medium;
 }
 @keyframes colorChange {
   0% {
