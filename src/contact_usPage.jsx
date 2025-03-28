@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import './contact_usPage.css';
 
+
+const FeedBack_API_URL = "http://localhost:8080/api/evaapfeedback";
 const ContactUs = () => {
   const [active, setActive] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    description: "",
+    feedback: "",
   });
 
   const feedbackForm = () => {
@@ -21,18 +23,25 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const feedbackData = {
+      name: formData.name,
+      email: formData.email,
+      feedback: formData.feedback,
+    };
+
     try {
-      const response = await fetch("http://localhost:8080/api/evaapfeedback", {
+      const response = await fetch(FeedBack_API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(feedbackData),
       });
 
       if (response.ok) {
         alert("Feedback submitted successfully!");
-        setFormData({ name: "", email: "", description: "" }); // Reset form
+        console.log("Feedback submitted:", feedbackData);
+        setFormData({ name: "", email: "", feedback: "" }); 
       } else {
         alert("Error submitting feedback.");
       }
@@ -71,7 +80,6 @@ const ContactUs = () => {
       </div>
 
       <ul className="ContactUs_pageinfo_followus">
-        {/* Social media links and images remain unchanged */}
       </ul>
 
       <button className="contactus_feedback_btn" onClick={feedbackForm}>
@@ -105,7 +113,8 @@ const ContactUs = () => {
           <div className="contactus_page_form_div">
             <label>Description :</label>
             <textarea
-              name="description"
+            type="text"
+              name="feedback"
               value={formData.description}
               onChange={handleChange}
               placeholder="Enter your feedback..."
