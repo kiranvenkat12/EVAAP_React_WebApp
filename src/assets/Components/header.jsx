@@ -76,7 +76,7 @@ const Header = () => {
           {isOpen ? <ImCross /> : <FaBars />}
         </button>
         <div className='header_div_login'>
-                      <NavLink to="LoginForm" > <button className='header_div_login_btn'>Login</button></NavLink> 
+                      <NavLink to="/loginform" > <button className='header_div_login_btn'>Login</button></NavLink> 
                          <button className='header_div_help_btn'>Help</button>
                     </div>
              
