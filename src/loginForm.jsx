@@ -6,7 +6,7 @@ import './loginform.css';
 const API_URL = "https://v1.nocodeapi.com/sandeephst/google_sheets/YqqUgyAwUTXXdPEp";
 const tabId = "Sheet1";
 
-const LoginFrom = () => {
+const LoginForm = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("login");
   const [role, setRole] = useState("");
@@ -195,4 +195,4 @@ const LoginFrom = () => {
   );
 };
 
-export default LoginFrom;
+export default LoginForm;
