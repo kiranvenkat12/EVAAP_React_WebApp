@@ -118,7 +118,7 @@ const LoginFrom = () => {
             Login
           </button>
           <button className={`tab-btn ${activeTab === "register" ? "active" : ""}`} onClick={showRegister}>
-            SignUp
+            Signup
           </button>
    
       {/* User Registration Form */}
