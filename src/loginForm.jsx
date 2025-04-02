@@ -47,7 +47,7 @@ const LoginFrom = () => {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    if (!formData.user_email || !formData.user_password) {
+    if (!formData.email || !formData.password) {
       alert("All fields are required");
       return;
     }
