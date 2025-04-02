@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './loginform.css';
+import './loginForm.css';
 
 
 const API_URL = "https://v1.nocodeapi.com/sandeephst/google_sheets/YqqUgyAwUTXXdPEp";
@@ -99,9 +99,9 @@ const LoginFrom = () => {
     setRole("");
   };
 
-  const showForm = () => setRole("employer");
-  const showUserForm = () => setRole("employee");
-  const showUserForm1 = () => setRole("admin");
+  const showForm = () => setRole("Employer");
+  const showUserForm = () => setRole("Employee");
+  const showUserForm1 = () => setRole("Admin");
 
   const goBack = () => setRole("");
 
@@ -164,9 +164,9 @@ const LoginFrom = () => {
           </div>
         )}
 
-        {(role === "employer" || role === "employee" || role === "admin") && (
+        {(role === "Employer" || role === "Employee" || role === "Admin") && (
           <div className="form-container">
-            <h2>{role === "employer" ? "employer" : role === "admin" ? "admin" : "employee"} Signup</h2>
+            <h2>{role === "Employer" ? "Employer" : role === "Admin" ? "Admin" : "Employee"} Signup</h2>
             <form onSubmit={handleRegister}>
               <input
                 type="email"
