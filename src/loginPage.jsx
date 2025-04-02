@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './loginform.css';
+import './loginPage.css';
 
 
 const API_URL = "https://v1.nocodeapi.com/sandeephst/google_sheets/YqqUgyAwUTXXdPEp";
 const tabId = "Sheet1";
 
-const LoginForm = () => {
+const LoginPage = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("login");
   const [role, setRole] = useState("");
@@ -147,7 +147,7 @@ const LoginForm = () => {
               />
               <button type="submit">Login</button>
               <div className='forget'>Forget password ?</div>
-              <div className='login-h1'>----continue with----</div>
+            
             </form>
           </div>
         )}
@@ -195,4 +195,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default LoginPage;

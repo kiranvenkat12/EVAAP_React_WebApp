@@ -84,48 +84,14 @@
     border: 1px solid rgb(176, 176, 176);
   }
   .forget{
-    position: absolute;
-    top: 85%;
-    left: 46%;
-    font-family: open sana;
-    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 10%;
   }
   .forget:hover{
-    color: rgb(20, 106, 205);
+    color: blue;
   }
-  .login-h1{
-    font-size: 20px;
-    font-family: open sana;
-    color: rgb(22, 22, 22);
-    position: absolute;
-    top: 80%;
-    left: 44%;
-  }
-  @media(max-width:900px){
-    .forget{
-        position: absolute;
-        top: 69%;
-        left: 42%;
-        font-family: open sana;
-        cursor: pointer;
-      }
-      .forget:hover{
-        color: rgb(20, 106, 205);
-      }
-      .login-h1{
-        font-size: 20px;
-        font-family: open sana;
-        color: rgb(22, 22, 22);
-        position: absolute;
-        top: 63%;
-        left: 37%;
-      }
-      .container {
-       
-        margin-top: 25%;
-       
-      }
-  }
+
+
   
   .tabs {
     display: flex;
@@ -268,5 +234,14 @@
         font-size: 0px;
        
       }
+      .container {
+        background: #fff;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin-top: 34%;
+        margin-bottom: 10%;
+        z-index:1;
+      }
   }
-  
