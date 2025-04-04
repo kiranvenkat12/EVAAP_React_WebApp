@@ -1,42 +1,52 @@
 import { useState } from 'react';
 import './loginForm.css';
+import { useNavigate } from 'react-router-dom';
 
-const API_URL = "http://localhost:8080/api/evaap_login"; 
+
+const API_URL = "http://localhost:8080/employee/register"; 
+const LOGIN_API_URL = "http://localhost:8080/employee/login";
 
 const LoginFrom = () => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("login");
   const [role, setRole] = useState("");
   const [formData, setFormData] = useState({
-    user_email: "",
-    user_password: ""
+    email: "",
+    password: ""
   });
 
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
-
   const handleLogin = async (e) => {
     e.preventDefault();
+
+    const loginData = {
+      email: formData.email,
+      password: formData.password,
+    };
+
     try {
-      const response = await fetch(`${API_URL}`, {
+      console.log("Login data:", loginData); 
+      const response = await fetch(LOGIN_API_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(loginData),
       });
-
-      const result = await response.json();
-
+      console.log("Login data:", loginData)
       if (response.ok) {
-        window.alert(`WELCOME LOGIN SUCCESSFUL!`);
-        
+        console.log(response.ok)
+        const data = await response.text();
+        console.log("Login data:", loginData)
+        alert(`WELCOME LOGIN SUCCESSFUL! FINISH THE VERIFICATION FORM`);
+        navigate("/registrationpage");
       } else {
-        alert(result.message || "Invalid email or password.");
+        const errorMessage = await response.text();
+        alert(`Login failed: ${errorMessage}`);
       }
     } catch (error) {
       console.error("Login error:", error);
@@ -44,35 +54,35 @@ const LoginFrom = () => {
     }
   };
 
-
   const handleRegister = async (e) => {
     e.preventDefault();
+
     if (!formData.email || !formData.password) {
       alert("All fields are required");
       return;
     }
 
+    const registerData = {
+      email: formData.email,
+      password: formData.password,
+    };
+
     try {
-      const response = await fetch(`${API_URL}`, {
+      const response = await fetch(API_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          role,
-          email: formData.email,
-          password: formData.password
-        })
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(registerData),
       });
 
-      const result = await response.json();
-
       if (response.ok) {
-        alert("Registration successful");
-        setFormData({ email: "", password: "" });
+        alert("Registration successful!");
+        setFormData({email: "", password: "" });
         setRole("");
+
+        navigate("/doctorVerificationpage");
       } else {
-        alert(result.message || "An error occurred during registration.");
+        const errorMessage = await response.text();
+        alert(`Registration failed: ${errorMessage}`);
       }
     } catch (error) {
       console.error("Registration error:", error);
@@ -120,7 +130,7 @@ const LoginFrom = () => {
             <form onSubmit={handleLogin}>
               <input
                 type="email"
-                name="user_email"
+                name="email"
                 placeholder="Email"
                 value={formData.email}
                 onChange={handleInputChange}
@@ -128,7 +138,7 @@ const LoginFrom = () => {
               />
               <input
                 type="password"
-                name="user_password"
+                name="password"
                 placeholder="Password"
                 value={formData.password}
                 onChange={handleInputChange}
