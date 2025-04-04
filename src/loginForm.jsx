@@ -78,8 +78,6 @@ const LoginFrom = () => {
         alert("Registration successful!");
         setFormData({email: "", password: "" });
         setRole("");
-
-        navigate("/doctorVerificationpage");
       } else {
         const errorMessage = await response.text();
         alert(`Registration failed: ${errorMessage}`);
