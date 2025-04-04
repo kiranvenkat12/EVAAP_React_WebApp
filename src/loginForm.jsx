@@ -42,7 +42,7 @@ const LoginFrom = () => {
         console.log(response.ok)
         const data = await response.text();
         console.log("Login data:", loginData)
-        alert(`WELCOME LOGIN SUCCESSFUL! FINISH THE VERIFICATION FORM`);
+        alert(`WELCOME ,${loginData.email} , LOGIN SUCCESSFUL! FINISH THE VERIFICATION FORM`);
         navigate("/registrationpage");
       } else {
         const errorMessage = await response.text();
