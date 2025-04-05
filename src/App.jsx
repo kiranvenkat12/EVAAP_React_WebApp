@@ -12,7 +12,10 @@ import SignupForm from "./registrationPage";
 import ContactUs from "./contact_usPage";
 import FounderPage from "./founderPage";
 import AboutUs from "./aboutUsPage";
+<<<<<<< Updated upstream
 import LoginForm from "./loginForm";
+=======
+>>>>>>> Stashed changes
 import OurServices from "./ourServices";
 
 function App() {
