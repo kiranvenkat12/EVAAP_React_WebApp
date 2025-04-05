@@ -13,7 +13,11 @@ import ContactUs from "./contact_usPage";
 import FounderPage from "./founderPage";
 import AboutUs from "./aboutUsPage";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import LoginForm from "./loginForm";
+=======
+import OurServices from "./ourServices";
+>>>>>>> Stashed changes
 =======
 import OurServices from "./ourServices";
 >>>>>>> Stashed changes
