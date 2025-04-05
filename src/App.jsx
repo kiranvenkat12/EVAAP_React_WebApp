@@ -12,14 +12,18 @@ import SignupForm from "./registrationPage";
 import ContactUs from "./contact_usPage";
 import FounderPage from "./founderPage";
 import AboutUs from "./aboutUsPage";
+<<<<<<< Updated upstream
 import LoginForm from "./loginForm";
+=======
+import OurServices from "./ourServices";
+>>>>>>> Stashed changes
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/ourServices" element={<OurServices/>} />
         <Route path="/home" element={<Home />} />
         <Route path="/registrationPage" element={<SignupForm />} />
         <Route path="/contact_usPage" element={<ContactUs />} />
