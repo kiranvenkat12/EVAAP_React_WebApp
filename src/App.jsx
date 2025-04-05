@@ -20,6 +20,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
+      <Route path="/" element={<Navigate to="/home"/>} />
         <Route path="/ourServices" element={<OurServices/>} />
         <Route path="/home" element={<Home />} />
         <Route path="/registrationPage" element={<SignupForm />} />
