@@ -13,9 +13,7 @@ import ContactUs from "./contact_usPage";
 import FounderPage from "./founderPage";
 import AboutUs from "./aboutUsPage";
 import LoginForm from "./loginForm";
-
-import CandidatePage from "./candidatePage";
-
+import CandidatePage from "./assets/Components/candidatePage";
 import OurServices from "./ourServices";
 
 

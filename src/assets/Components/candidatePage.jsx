@@ -3,7 +3,7 @@ import "./candidatePage.css";
 import { IoPeopleCircleSharp } from "react-icons/io5";
 
 
-function candidatePage() {
+function CandidatePage() {
   return (
     <div>
         <div className="containerparent">
@@ -46,4 +46,4 @@ function candidatePage() {
   )
 }
 
-export default candidatePage;
+export default CandidatePage;
