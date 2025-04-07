@@ -13,6 +13,7 @@ import ContactUs from "./contact_usPage";
 import FounderPage from "./founderPage";
 import AboutUs from "./aboutUsPage";
 import LoginForm from "./loginForm";
+import CandidatePage from "./assets/Components/candidatePage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/founderPage" element={<FounderPage />} />
         <Route path="/aboutUsPage" element={<AboutUs />} />
         <Route path="/loginForm" element={<LoginForm />} />
+        <Route path="/candidatePage" element={<CandidatePage />} />
       </Routes>
       <Fotter />
     </Router>

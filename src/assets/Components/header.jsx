@@ -78,7 +78,8 @@ const Header = () => {
           <NavLink to="/loginForm">
             <button className="header_div_login_btn">Login</button>
           </NavLink>
-          <button className="header_div_help_btn">Help</button>
+          <NavLink to="/candidatePage">
+          <button className="header_div_help_btn">Help</button></NavLink>
         </div>
       </div>
     </header>
