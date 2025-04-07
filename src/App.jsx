@@ -13,14 +13,19 @@ import ContactUs from "./contact_usPage";
 import FounderPage from "./founderPage";
 import AboutUs from "./aboutUsPage";
 import LoginForm from "./loginForm";
-import CandidatePage from "./assets/Components/candidatePage";
+
+import CandidatePage from "./candidatePage";
+
+import OurServices from "./ourServices";
+
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
+      <Route path="/" element={<Navigate to="/home"/>} />
+        <Route path="/ourServices" element={<OurServices/>} />
         <Route path="/home" element={<Home />} />
         <Route path="/registrationPage" element={<SignupForm />} />
         <Route path="/contact_usPage" element={<ContactUs />} />

@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import './contact_usPage.css';
 
 
-const FeedBack_API_URL = "http://localhost:8080/api/evaapfeedback";
+const FeedBack_API_URL = "http://localhost:8080/feedback";
 const ContactUs = () => {
   const [active, setActive] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    feedback: "",
+    feedBack: "",
   });
 
   const feedbackForm = () => {
@@ -23,11 +23,15 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log("Form data:", formData);
+
     const feedbackData = {
       name: formData.name,
       email: formData.email,
-      feedback: formData.feedback,
+      feedBack: formData.feedBack,
     };
+
+
 
     try {
       const response = await fetch(FeedBack_API_URL, {
@@ -39,9 +43,9 @@ const ContactUs = () => {
       });
 
       if (response.ok) {
-        alert("Feedback submitted successfully!");
+        alert( ` ${feedbackData.name}, your Feedback submitted successfully!`);
         console.log("Feedback submitted:", feedbackData);
-        setFormData({ name: "", email: "", feedback: "" }); 
+        setFormData({ name: "", email: "", feedBack: ""}); 
       } else {
         alert("Error submitting feedback.");
       }
@@ -114,8 +118,8 @@ const ContactUs = () => {
             <label>Description :</label>
             <textarea
             type="text"
-              name="feedback"
-              value={formData.description}
+              name="feedBack"
+              value={formData.feedBack}
               onChange={handleChange}
               placeholder="Enter your feedback..."
               required
