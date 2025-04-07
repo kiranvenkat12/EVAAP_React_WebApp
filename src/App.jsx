@@ -15,6 +15,7 @@ import AboutUs from "./aboutUsPage";
 import LoginForm from "./loginForm";
 import CandidatePage from "./assets/Components/candidatePage";
 import OurServices from "./ourServices";
+import Admin from "./admin"
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/aboutUsPage" element={<AboutUs />} />
         <Route path="/loginForm" element={<LoginForm />} />
         <Route path="/candidatePage" element={<CandidatePage />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
       <Fotter />
     </Router>
