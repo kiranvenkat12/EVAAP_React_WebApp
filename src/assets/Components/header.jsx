@@ -52,7 +52,7 @@ const Header = () => {
                 Contact us
               </NavLink>
               <NavLink
-                to="/"
+                to="/ourServices"
                 className={({ isActive }) =>
                   isActive ? "header_active_navlink" : "header_navlink"
                 }
@@ -74,10 +74,13 @@ const Header = () => {
         <button className="header_menu_bar_btn" onClick={toggleButton}>
           {isOpen ? <ImCross /> : <FaBars />}
         </button>
-        {/* <div className='header_div_login'>
-                         <button className='header_div_login_btn'>Login</button>
-                         <button className='header_div_help_btn'>Help</button>
-                    </div> */}
+        <div className="header_div_login">
+          <NavLink to="/loginForm">
+            <button className="header_div_login_btn">Login</button>
+          </NavLink>
+          <NavLink to="/admin">
+          <button className="header_div_help_btn">Help</button></NavLink>
+        </div>
       </div>
     </header>
   );
