@@ -22,7 +22,7 @@ const AboutusPage = () => {
           <img src={Aboutus_img} alt="Laptop" className="header-image" />
         </div>
         </div>
-        </div>
+      </div>
       
       {/* Vision Statement */}
       <div className="Our_Vision_Container">
@@ -127,4 +127,4 @@ const AboutusPage = () => {
   );
 };
 
-export default AboutusPage;
+export default AboutusPage; 
