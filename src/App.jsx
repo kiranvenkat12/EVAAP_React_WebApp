@@ -12,7 +12,7 @@ import SignupForm from "./registrationPage";
 import ContactUs from "./contact_usPage";
 import FounderPage from "./founderPage";
 import AboutUs from "./aboutUsPage";
-import LoginForm from "./loginForm";
+// import LoginForm from "./loginForm";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Route path="/contact_usPage" element={<ContactUs />} />
         <Route path="/founderPage" element={<FounderPage />} />
         <Route path="/aboutUsPage" element={<AboutUs />} />
-        <Route path="/loginForm" element={<LoginForm />} />
+        {/* <Route path="/loginForm" element={<LoginForm />} /> */}
       </Routes>
       <Fotter />
     </Router>
