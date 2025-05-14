@@ -34,7 +34,7 @@ const Header = () => {
                   isActive ? "header_active_navlink" : "header_navlink"
                 }
               >
-                Ho
+                Home
               </NavLink>
               <NavLink
                 to="/aboutUsPage"

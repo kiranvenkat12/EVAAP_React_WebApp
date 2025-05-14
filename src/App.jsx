@@ -5,7 +5,6 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-
 import Header from "./assets/Components/header";
 import Fotter from "./assets/Components/fotter";
 import Home from "./home";
