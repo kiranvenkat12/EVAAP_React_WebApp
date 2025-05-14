@@ -4,6 +4,7 @@ import './registrationPage.css';
 
 import PDF_IMAGE from '../public/images/logo/PDF_IMAGE.png';
 
+const REGISTRATION_API_URL = 'http://localhost:8080/employee-registration/upload';
 
 function SignupForm() {
   const [formData, setFormData] = useState({
@@ -18,6 +19,41 @@ function SignupForm() {
   });
 
   const [fileURL, setFileURL] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    const formToSubmit = {
+      ...formData,
+      mobileNumber: formData.phone,
+    };
+  
+   
+    delete formToSubmit.phone;
+  
+    const formDataToSend = new FormData();
+    formDataToSend.append('employee', new Blob([JSON.stringify(formToSubmit)], { type: 'application/json' }));
+    formDataToSend.append('resume', formData.resume);
+  
+    try {
+      const response = await fetch(REGISTRATION_API_URL, {
+        method: 'POST',
+        body: formDataToSend,
+      });
+  
+      if (response.ok) {
+        const result = await response.json();
+        alert('Registration successful!');
+        console.log('Saved Employee:', result);
+      } else {
+        alert('Failed to submit the form. Please check the details.');
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      alert('An error occurred while submitting the form.');
+    }
+  };
+  
 
   const handleChange = (e) => {
     const { id, value, type, files } = e.target;
@@ -100,12 +136,7 @@ function SignupForm() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    alert('Form submitted successfully');
-  };
-
+ 
   return (
     <>
     <form className="signup-page" onSubmit={handleSubmit}>
