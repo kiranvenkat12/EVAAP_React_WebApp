@@ -33,7 +33,7 @@ const Header = () => {
                   isActive ? "header_active_navlink" : "header_navlink"
                 }
               >
-                Home
+                Homee
               </NavLink>
               <NavLink
                 to="/aboutUsPage"
